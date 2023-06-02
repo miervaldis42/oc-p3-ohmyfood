@@ -1,4 +1,28 @@
-.logo-big {
-  font-family: $font-titles;
-  font-size: 30px;
+.header-logo {
+  height: 63px;
+
+  display: flex;
+  justify-content: center;
+
+  .logo-big {
+    margin: 14px 0;
+  }
+}
+
+#geolocation {
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+
+  color: $color-black;
+
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+  p {
+    font-weight: $font-roboto-medium;
+  }
 }

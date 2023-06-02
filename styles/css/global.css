@@ -5,9 +5,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /******* Colors *******/
-.logo-big {
-  font-family: "Shrikhand", cursive, sans-serif;
-  font-size: 30px;
+.header-logo {
+  height: 63px;
+  display: flex;
+  justify-content: center;
+}
+.header-logo .logo-big {
+  margin: 14px 0;
+}
+
+#geolocation {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 17px;
+  color: #353535;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+#geolocation p {
+  font-weight: 500;
 }
 
 .logo-small {
