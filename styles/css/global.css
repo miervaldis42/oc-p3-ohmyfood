@@ -34,6 +34,28 @@
   color: white;
 }
 
+#section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 39px 0 57px 0;
+}
+#section-hero h1,
+#section-hero p {
+  text-align: center;
+}
+#section-hero p {
+  font-size: 18px;
+  color: #353535;
+  margin: 8px 0 28px 0;
+}
+
+/**
+
+  Global Styles
+
+**/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -59,6 +81,22 @@ a {
 
 a,
 button {
-  font-family: 500;
-  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  color: white;
+}
+
+button {
+  position: relative;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 25px;
+  padding: 13px 18.75px;
+}
+button:active {
+  opacity: 0.8;
+  top: 2px;
+  left: 1px;
+  box-shadow: none;
 }/*# sourceMappingURL=global.css.map */

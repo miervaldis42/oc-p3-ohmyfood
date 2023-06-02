@@ -1,0 +1,21 @@
+#section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: $color-grey;
+
+  padding: 39px 0 57px 0;
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    color: $color-black;
+
+    margin: 8px 0 28px 0;
+  }
+}
