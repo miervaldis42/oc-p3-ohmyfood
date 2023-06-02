@@ -1,0 +1,19 @@
+/**
+    Theme
+**/
+
+/******* Fonts *******/
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+
+$font-titles: "Shrikhand", cursive, sans-serif;
+$font-roboto: Roboto, sans-serif;
+$font-roboto-bold: 700;
+$font-roboto-medium: 500;
+$font-roboto-light: 300;
+
+/******* Colors *******/
+$color-primary: #9356dc;
+$color-secondary: #ff79da;
+$color-tertiary: #99e2d0;

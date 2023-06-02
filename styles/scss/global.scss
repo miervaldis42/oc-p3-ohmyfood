@@ -1,0 +1,35 @@
+// Imports
+@import "theme";
+@import "./common/header";
+@import "./common/footer";
+
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-family: $font-roboto;
+  font-weight: $font-roboto-bold;
+  font-size: 24px;
+}
+
+p {
+  font-family: $font-roboto;
+  font-weight: $font-roboto-light;
+}
+
+a {
+  display: block;
+
+  padding: 0;
+  margin: 0;
+}
+
+a,
+button {
+  font-family: $font-roboto-medium;
+  font-size: 16px;
+}
