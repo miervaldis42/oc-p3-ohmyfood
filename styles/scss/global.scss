@@ -5,6 +5,7 @@
 @import "./common/footer";
 
 @import "./home/hero-section";
+@import "./home/app-instructions";
 
 /**
 
@@ -19,7 +20,8 @@
   margin: 0;
 }
 
-h1 {
+h1,
+h2 {
   font-family: $font-roboto;
   font-weight: $font-roboto-bold;
   font-size: 24px;

@@ -1,0 +1,57 @@
+#section-app-instruction {
+  padding: 48px 20px;
+  padding-bottom: 68px;
+
+  #section-app-instruction-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin-top: 26px;
+    margin-left: 18px;
+
+    .app-instruction-step {
+      position: relative;
+
+      width: 85dvw;
+
+      display: flex;
+      align-items: center;
+      gap: 27px;
+
+      background-color: $color-grey;
+      border-radius: 20px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+
+      padding: 28px 38px;
+
+      .app-instruction-step-number {
+        position: absolute;
+        left: -14px;
+
+        height: 24px;
+        width: 24px;
+
+        background-color: $color-primary;
+        border-radius: 50%;
+
+        p {
+          height: 100%;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          font-family: $font-roboto;
+          font-weight: $font-roboto-medium;
+          font-size: 14px;
+          color: white;
+        }
+      }
+
+      p {
+        font-weight: $font-roboto-medium;
+      }
+    }
+  }
+}
