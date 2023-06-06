@@ -68,3 +68,14 @@ button {
     box-shadow: none;
   }
 }
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  button {
+    padding: 16px 21px;
+  }
+}

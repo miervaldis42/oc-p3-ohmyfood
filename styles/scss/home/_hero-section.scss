@@ -19,3 +19,14 @@
     margin: 8px 0 28px 0;
   }
 }
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-hero {
+    padding: 30px 0;
+
+    p {
+      margin: 30px 0;
+    }
+  }
+}
