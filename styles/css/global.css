@@ -115,12 +115,6 @@
   font-weight: 500;
 }
 
-/**** Desktop Version ****/
-@media (width >= 1440px) {
-  .header-logo {
-    height: 96px;
-  }
-}
 footer {
   color: white;
   background-color: #353535;
@@ -426,6 +420,10 @@ button:active {
 
 /**** Desktop Version ****/
 @media (width >= 1440px) {
+  .header-logo {
+    height: 96px;
+  }
+
   #section-app-instruction {
     padding: 50px 180px;
   }
