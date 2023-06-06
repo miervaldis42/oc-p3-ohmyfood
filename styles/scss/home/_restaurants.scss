@@ -97,3 +97,18 @@
     }
   }
 }
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-restaurants {
+    padding: 50px 180px;
+  }
+
+  #restaurant-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+  }
+}
