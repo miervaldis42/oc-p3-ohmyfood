@@ -9,9 +9,10 @@
   height: 63px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .header-logo .logo-big {
-  margin: 14px 0;
+  height: 32px;
 }
 
 #geolocation {
@@ -28,6 +29,12 @@
   font-weight: 500;
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  .header-logo {
+    height: 96px;
+  }
+}
 footer {
   color: white;
   background-color: #353535;
@@ -43,13 +50,38 @@ footer .footer-links {
   gap: 12px;
   margin-top: 20px;
 }
-footer .footer-links .footer-link-highlight {
-  font-weight: 500;
+footer .footer-links li:not(.footer-link-highlight) a {
+  font-weight: 100;
 }
 footer .footer-links .footer-link-highlight i {
   padding-right: 12px;
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  footer,
+  footer .footer-links {
+    display: flex;
+    align-items: flex-end;
+  }
+  footer {
+    height: 114px;
+    flex-direction: row-reverse;
+    padding-right: 68px;
+    padding-bottom: 30px;
+  }
+  footer .footer-links {
+    flex-direction: row;
+    margin: 0;
+    margin-right: 100px;
+  }
+  footer .footer-links .footer-link-highlight i {
+    padding-right: 4px;
+  }
+  footer .footer-links .footer-link-highlight:nth-child(2) {
+    margin-right: 42px;
+  }
+}
 #section-hero {
   display: flex;
   flex-direction: column;
@@ -67,6 +99,15 @@ footer .footer-links .footer-link-highlight i {
   margin: 8px 0 28px 0;
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-hero {
+    padding: 30px 0;
+  }
+  #section-hero p {
+    margin: 30px 0;
+  }
+}
 #section-app-instruction {
   padding: 48px 20px;
   padding-bottom: 68px;
@@ -117,10 +158,44 @@ footer .footer-links .footer-link-highlight i {
 #section-app-instruction
   #section-app-instruction-steps
   .app-instruction-step
+  i {
+  font-size: 120%;
+  color: #7e7e7e;
+}
+#section-app-instruction
+  #section-app-instruction-steps
+  .app-instruction-step
+  i:hover {
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section-app-instruction
+  #section-app-instruction-steps
+  .app-instruction-step
   p {
   font-weight: 500;
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-app-instruction {
+    padding: 50px 180px;
+  }
+  #section-app-instruction #section-app-instruction-steps {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 42px;
+  }
+  #section-app-instruction
+    #section-app-instruction-steps
+    .app-instruction-step {
+    width: -moz-max-content;
+    width: max-content;
+    padding-right: 52px;
+  }
+}
 #section-restaurants {
   background-color: #f6f6f6;
   padding: 54px 18px;
@@ -212,6 +287,19 @@ footer .footer-links .footer-link-highlight i {
   }
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-restaurants {
+    padding: 50px 180px;
+  }
+  #restaurant-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 100px;
+    grid-row-gap: 50px;
+  }
+}
 /**
 
   Global Styles
@@ -241,6 +329,7 @@ ul li {
 
 a {
   display: block;
+  text-decoration: none;
   padding: 0;
   margin: 0;
 }
@@ -265,4 +354,14 @@ button:active {
   top: 2px;
   left: 1px;
   box-shadow: none;
+}
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  h1 {
+    font-size: 40px;
+  }
+  button {
+    padding: 16px 21px;
+  }
 } /*# sourceMappingURL=global.css.map */
