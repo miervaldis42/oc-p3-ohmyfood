@@ -28,10 +28,26 @@
   font-weight: 500;
 }
 
-.logo-small {
-  font-family: "Shrikhand", cursive, sans-serif;
-  font-size: 18px;
+footer {
   color: white;
+  background-color: #353535;
+  padding: 22px 25px;
+}
+footer .logo-small {
+  height: 22px;
+  filter: invert(100%);
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+footer .footer-links .footer-link-highlight {
+  font-weight: 500;
+}
+footer .footer-links .footer-link-highlight i {
+  padding-right: 12px;
 }
 
 #section-hero {
@@ -217,6 +233,10 @@ h2 {
 p {
   font-family: Roboto, sans-serif;
   font-weight: 300;
+}
+
+ul li {
+  list-style: none;
 }
 
 a {
