@@ -3,9 +3,10 @@
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .logo-big {
-    margin: 14px 0;
+    height: 32px;
   }
 }
 
@@ -24,5 +25,12 @@
 
   p {
     font-weight: $font-roboto-medium;
+  }
+}
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  .header-logo {
+    height: 96px;
   }
 }
