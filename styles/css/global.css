@@ -115,6 +115,12 @@
   font-weight: 500;
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  .header-logo {
+    height: 96px;
+  }
+}
 footer {
   color: white;
   background-color: #353535;
@@ -258,6 +264,24 @@ footer .footer-links .footer-link-highlight i {
   font-weight: 500;
 }
 
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-app-instruction {
+    padding: 50px 180px;
+  }
+  #section-app-instruction #section-app-instruction-steps {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 42px;
+  }
+  #section-app-instruction
+    #section-app-instruction-steps
+    .app-instruction-step {
+    width: -moz-max-content;
+    width: max-content;
+    padding-right: 52px;
+  }
+}
 #section-restaurants {
   background-color: #f6f6f6;
   padding: 54px 18px;
