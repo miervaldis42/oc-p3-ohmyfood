@@ -49,8 +49,39 @@
         }
       }
 
+      i {
+        font-size: 120%;
+        color: #7e7e7e;
+
+        &:hover {
+          background: $gradient;
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+
       p {
         font-weight: $font-roboto-medium;
+      }
+    }
+  }
+}
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  #section-app-instruction {
+    padding: 50px 180px;
+
+    #section-app-instruction-steps {
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 42px;
+
+      .app-instruction-step {
+        width: max-content;
+
+        padding-right: 52px;
       }
     }
   }
