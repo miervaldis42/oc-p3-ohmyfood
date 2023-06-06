@@ -55,7 +55,8 @@
   0% {
     box-shadow: 0 0 inset;
   }
-  50%, 100% {
+  50%,
+  100% {
     box-shadow: 0 -100px inset;
   }
 }
@@ -74,7 +75,8 @@
   animation: fillNeck 5s forwards;
 }
 @keyframes fillNeck {
-  0%, 50% {
+  0%,
+  50% {
     box-shadow: 0 0 inset;
   }
   100% {
@@ -262,24 +264,6 @@ footer .footer-links .footer-link-highlight i {
   font-weight: 500;
 }
 
-/**** Desktop Version ****/
-@media (width >= 1440px) {
-  #section-app-instruction {
-    padding: 50px 180px;
-  }
-  #section-app-instruction #section-app-instruction-steps {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 42px;
-  }
-  #section-app-instruction
-    #section-app-instruction-steps
-    .app-instruction-step {
-    width: -moz-max-content;
-    width: max-content;
-    padding-right: 52px;
-  }
-}
 #section-restaurants {
   background-color: #f6f6f6;
   padding: 54px 18px;
@@ -442,10 +426,19 @@ button:active {
 
 /**** Desktop Version ****/
 @media (width >= 1440px) {
-  h1 {
-    font-size: 40px;
+  #section-app-instruction {
+    padding: 50px 180px;
   }
-  button {
-    padding: 16px 21px;
+  #section-app-instruction #section-app-instruction-steps {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 42px;
+  }
+  #section-app-instruction
+    #section-app-instruction-steps
+    .app-instruction-step {
+    width: -moz-max-content;
+    width: max-content;
+    padding-right: 52px;
   }
 } /*# sourceMappingURL=global.css.map */
