@@ -1,0 +1,108 @@
+.loader {
+  position: absolute;
+  z-index: 2;
+
+  height: 100dvh;
+  width: 100dvw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: $color-grey;
+
+  animation: loading 2s 5s forwards;
+
+  @keyframes loading {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      z-index: -2;
+    }
+  }
+
+  + .container {
+    max-height: 98dvh;
+    overflow-y: hidden;
+
+    opacity: 0;
+
+    animation: apparition 2s 6s forwards;
+
+    @keyframes apparition {
+      100% {
+        max-height: fit-content;
+        overflow-y: auto;
+
+        opacity: 1;
+      }
+    }
+  }
+
+  .loader-icon {
+    height: 98px;
+    width: 40px;
+
+    position: relative;
+    box-sizing: border-box;
+
+    display: inline-block;
+
+    border: 2px solid $color-tertiary;
+    border-radius: 20px 20px 4px 4px;
+
+    color: $color-primary;
+
+    background-color: white;
+    animation: fillBottle 5s forwards;
+
+    @keyframes fillBottle {
+      0% {
+        box-shadow: 0 0 inset;
+      }
+      50%,
+      100% {
+        box-shadow: 0 -100px inset;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0%;
+      left: 50%;
+
+      box-sizing: border-box;
+      content: "";
+
+      height: 35px;
+      width: 15px;
+
+      background-color: white;
+      border: 2px solid $color-tertiary;
+      border-bottom: none;
+
+      transform: translate(-50%, -95%);
+      animation: fillNeck 5s forwards;
+    }
+
+    @keyframes fillNeck {
+      0%,
+      50% {
+        box-shadow: 0 0 inset;
+      }
+      100% {
+        box-shadow: 0 -32px inset;
+      }
+    }
+  }
+}
+
+/**** Desktop Version ****/
+@media (width >= 1440px) {
+  .loader {
+    height: 100vh;
+    width: 100%;
+  }
+}
