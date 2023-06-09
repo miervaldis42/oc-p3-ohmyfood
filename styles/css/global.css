@@ -386,6 +386,23 @@ footer .footer-links .footer-link-highlight i {
     grid-row-gap: 50px;
   }
 }
+.header-restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-restaurant .header-logo {
+  flex-grow: 1;
+}
+.header-restaurant .button-go-back {
+  position: absolute;
+  left: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 150%;
+  color: #353535;
+}
+
 /**
 
   Global Styles

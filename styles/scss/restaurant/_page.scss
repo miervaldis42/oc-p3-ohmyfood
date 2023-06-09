@@ -1,0 +1,20 @@
+.header-restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .header-logo {
+    flex-grow: 1;
+  }
+
+  .button-go-back {
+    position: absolute;
+    left: 24px;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 150%;
+    color: $color-black;
+  }
+}

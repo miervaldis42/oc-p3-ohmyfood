@@ -9,6 +9,8 @@
 @import "./home/app-instructions";
 @import "./home/restaurants";
 
+@import "./restaurant/page";
+
 /**
 
   Global Styles
@@ -61,6 +63,8 @@ button {
   border-radius: 25px;
 
   padding: 13px 18.75px;
+
+  cursor: pointer;
 
   &:active {
     opacity: 0.8;
