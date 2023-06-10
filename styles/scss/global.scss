@@ -10,6 +10,7 @@
 @import "./home/restaurants";
 
 @import "./restaurant/page";
+@import "./restaurant/menu";
 
 /**
 
@@ -29,6 +30,19 @@ h2 {
   font-family: $font-roboto;
   font-weight: $font-roboto-bold;
   font-size: 24px;
+}
+
+h3 {
+  font-family: $font-roboto;
+  font-weight: $font-roboto-light;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+h4 {
+  font-family: $font-roboto;
+  font-weight: $font-roboto-medium;
+  font-size: 18px;
 }
 
 p {
