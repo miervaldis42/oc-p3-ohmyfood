@@ -458,7 +458,14 @@ footer .footer-links .footer-link-highlight i {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  min-width: 0;
   margin: 13.5px 15px;
+}
+.menu section .menu-items .menu-item .menu-item-dish h4,
+.menu section .menu-items .menu-item .menu-item-dish p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu section .menu-items .menu-item .menu-item-dish p {
   font-weight: 300;
