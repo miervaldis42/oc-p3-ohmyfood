@@ -87,12 +87,7 @@
         }
 
         .menu-item-added {
-          display: none;
           width: 0;
-        }
-
-        &:active .menu-item-added {
-          width: 59px;
 
           display: flex;
           justify-content: center;
@@ -100,6 +95,16 @@
 
           background-color: $color-tertiary;
           border-radius: 0 15px 15px 0;
+
+          transition: width 1s ease-in-out;
+
+          i {
+            color: transparent;
+          }
+        }
+
+        &:hover .menu-item-added {
+          width: 59px;
 
           i {
             font-size: 120%;
@@ -138,22 +143,6 @@
 
       section .menu-items {
         width: 636px;
-
-        .menu-item:hover .menu-item-added {
-          width: 59px;
-
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          background-color: $color-tertiary;
-          border-radius: 0 15px 15px 0;
-
-          i {
-            font-size: 120%;
-            color: white;
-          }
-        }
       }
     }
   }

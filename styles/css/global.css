@@ -476,18 +476,21 @@ footer .footer-links .footer-link-highlight i {
   font-size: 15px;
 }
 .menu section .menu-items .menu-item .menu-item-added {
-  display: none;
   width: 0;
-}
-.menu section .menu-items .menu-item:active .menu-item-added {
-  width: 59px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
+  transition: width 1s ease-in-out;
 }
-.menu section .menu-items .menu-item:active .menu-item-added i {
+.menu section .menu-items .menu-item .menu-item-added i {
+  color: transparent;
+}
+.menu section .menu-items .menu-item:hover .menu-item-added {
+  width: 59px;
+}
+.menu section .menu-items .menu-item:hover .menu-item-added i {
   font-size: 120%;
   color: white;
 }
@@ -514,18 +517,6 @@ footer .footer-links .footer-link-highlight i {
   }
   .restaurant-container .menu section .menu-items {
     width: 636px;
-  }
-  .restaurant-container .menu section .menu-items .menu-item:hover .menu-item-added {
-    width: 59px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #99e2d0;
-    border-radius: 0 15px 15px 0;
-  }
-  .restaurant-container .menu section .menu-items .menu-item:hover .menu-item-added i {
-    font-size: 120%;
-    color: white;
   }
 }
 /**
