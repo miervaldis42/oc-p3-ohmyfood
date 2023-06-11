@@ -34,7 +34,39 @@
   }
 
   section {
+    opacity: 0;
+    z-index: -2;
+
+    position: relative;
+    left: 20%;
+
     margin-top: 40px;
+
+    animation: drawer 1s forwards;
+
+    &:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    &:nth-child(4) {
+      animation-delay: 0.8s;
+    }
+
+    @keyframes drawer {
+      80% {
+        z-index: 1;
+        opacity: 0.5;
+      }
+
+      100% {
+        opacity: 1;
+        left: 0;
+      }
+    }
 
     hr {
       height: 3px;
