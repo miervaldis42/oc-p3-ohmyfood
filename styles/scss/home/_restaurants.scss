@@ -61,39 +61,6 @@
 
       padding: 14px 25px;
       padding-left: 13px;
-
-      .button-like {
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-
-        i {
-          font-size: 20px;
-        }
-
-        &:hover {
-          i {
-            opacity: 0.4;
-
-            background-image: $gradient;
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            -webkit-text-stroke-width: 0;
-
-            animation: slowFillup 1s forwards;
-
-            @keyframes slowFillup {
-              50% {
-                opacity: 0.8;
-              }
-              100% {
-                opacity: 1;
-              }
-            }
-          }
-        }
-      }
     }
   }
 }

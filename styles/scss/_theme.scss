@@ -3,7 +3,6 @@
 **/
 
 /******* Fonts *******/
-// Fonts
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
@@ -22,3 +21,37 @@ $color-secondary: #ff79da;
 $color-tertiary: #99e2d0;
 
 $gradient: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+
+// Heart Icon
+.button-like {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  i {
+    font-size: 20px;
+  }
+
+  &:hover {
+    i {
+      opacity: 0.2;
+
+      background-image: $gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 0;
+
+      animation: slowFillup 1s forwards;
+
+      @keyframes slowFillup {
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
