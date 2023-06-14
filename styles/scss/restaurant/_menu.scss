@@ -42,7 +42,7 @@
 
     margin-top: 40px;
 
-    animation: drawer 1s forwards;
+    animation: slideIn 1s forwards;
 
     &:nth-child(2) {
       animation-delay: 0.2s;
@@ -56,7 +56,7 @@
       animation-delay: 0.8s;
     }
 
-    @keyframes drawer {
+    @keyframes slideIn {
       80% {
         z-index: 1;
         opacity: 0.5;
@@ -127,6 +127,9 @@
         }
 
         .menu-item-added {
+          position: relative;
+          right: 0;
+
           width: 0;
 
           display: flex;
@@ -136,19 +139,19 @@
           background-color: $color-tertiary;
           border-radius: 0 15px 15px 0;
 
-          transition: width 1s ease-in-out;
+          overflow: hidden;
 
-          i {
-            color: transparent;
-          }
-        }
-
-        &:hover .menu-item-added {
-          width: 59px;
+          transition: width 250ms ease-in;
 
           i {
             font-size: 120%;
             color: white;
+          }
+        }
+
+        &:hover {
+          .menu-item-added {
+            width: 59px;
           }
         }
       }
